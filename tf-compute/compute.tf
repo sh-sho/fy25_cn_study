@@ -32,7 +32,8 @@ resource "oci_core_instance" "ubuntu_instance" {
     }
     preserve_boot_volume = false
     metadata = {
-        ssh_authorized_keys = file("${var.public_ssh_key_path}")
+        # ssh_authorized_keys = file("${var.public_ssh_key_path}")
+        ssh_authorized_keys = "${var.public_ssh_key_path}"
 
         user_data = "${base64encode(file("./instance_init/install_init.yaml"))}"
     }
