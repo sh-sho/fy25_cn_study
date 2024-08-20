@@ -198,3 +198,7 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+.ssh_key
+*.zip
+sh-sho.keys

@@ -1,0 +1,52 @@
+title: "Resource Manager Demo Stack"
+stackDescription: "A stack to demonstrate how to use Resource Manager in the Oracle Cloud."
+schemaVersion: 1.1.0
+version: "20200301"
+locale: “en"
+logoUrl: https://objectstorage.us-phoenix-1.oraclecloud.com/n/toddrsharp/b/object-upload-demo-public/o/Todd_Head_Square_130_x_130.png
+variableGroups:
+  - title: "Required Inputs"
+    variables:
+      # - "source_ocid"
+      - "region"
+      - "shape"
+      # - "subnet_ocid"
+      - "compartment_ocid"
+variables:
+  # "source_ocid":
+  #   type: oci:core:image:id
+  #   visible: true
+  #   required: true
+  #   title: "Image source"
+  #   description: "The OCID of the source image"
+  "region":
+    type: oci:identity:region:name
+    visible: true
+    required: true
+    title: "Region"
+    description: "The region where the resources will be created"
+    default: region
+  "shape":
+    type: enum
+    visible: true
+    required: true
+    title: "Shape"
+    description: "The shape of the virtual machine"
+    default: "VM.Standard.E5.Flex"
+    enum:
+      - "VM.Standard.E5.Flex"
+      - "VM.Standard.E4.Flex"
+  # "subnet_ocid":
+  #   type: oci:core:subnet:id
+  #   visible: true
+  #   required: true
+  #   title: "Subnet"
+  #   description: "The OCID of the subnet where the virtual machine will be created"
+  "compartment_ocid":
+    type: oci:identity:compartment:id
+    visible: true
+    required: true
+    title: "Compartment"
+    description: "The OCID of the compartment where the resources will be created"
+    default: current_user_ocid
+
