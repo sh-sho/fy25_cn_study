@@ -47,10 +47,10 @@ variable "compartment_ocid" {
   type = string
 }
 
-# variable "public_secret_ocid" {
-#   type = string
-# }
+variable "public_secret_ocid" {
+  type = string
+}
 
-# variable "private_secret_ocid" {
-#   type = string
-# }
+variable "private_secret_ocid" {
+  type = string
+}

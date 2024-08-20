@@ -1,0 +1,14 @@
+source_ocid = "ocid1.image.oc1.us-chicago-1.aaaxxx"
+subnet_ocid = "ocid1.subnet.oc1.us-chicago-1.aaaxxx"
+tenancy_ocid = "ocid1.tenancy.oc1..aaaxxx"
+user_ocid = "ocid1.user.oc1..aaaaxxx"
+fingerprint = "aa:aa:"
+private_key_path = "~/.oci/oci_api_key.pem"
+public_ssh_key_path = "~/.ssh/id_rsa.pub"
+region = "us-chicago-1"
+display_instance_name = "test"
+# display_vnic_name = ""
+shape = "VM.Standard.E5.Flex"
+compartment_ocid = "ocid1.compartment.oc1..aaaaxxx"
+
+
